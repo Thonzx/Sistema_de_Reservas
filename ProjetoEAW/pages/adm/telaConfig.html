@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/adm/telaConfig.css">
+    <script defer src="/ProjetoEAW/assets/js/adm/telaConfig.js"></script>
+    <title>Configurações do Administrador</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title"><h2>Configurações do Administrador</h2></div>
+
+        <!-- 🔹 Foto do Usuário -->
+        <div class="profile-section">
+            <img id="profileImage" src="/ProjetoEAW/assets/img/default-avatar.png" alt="Foto do Usuário">
+            <input type="file" id="uploadPhoto" accept="image/*">
+            <label for="uploadPhoto" class="upload-btn">Alterar Foto</label>
+        </div>
+
+        <form id="configForm">
+            <!-- 🔹 Nome do Usuário -->
+            <div class="form-group">
+                <label for="nomeUsuario">Nome:</label>
+                <input type="text" id="nomeUsuario" placeholder="Digite seu nome">
+            </div>
+
+            <!-- 🔹 E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <!-- 🔹 Telefone -->
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <!-- 🔹 Alteração de Senha -->
+            <div class="form-group">
+                <label for="senhaAtual">Senha Atual:</label>
+                <input type="password" id="senhaAtual" placeholder="Digite sua senha atual">
+            </div>
+
+            <div class="form-group">
+                <label for="novaSenha">Nova Senha:</label>
+                <input type="password" id="novaSenha" placeholder="Digite sua nova senha">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmarSenha">Confirmar Nova Senha:</label>
+                <input type="password" id="confirmarSenha" placeholder="Confirme sua nova senha">
+            </div>
+
+            <!-- 🔹 Botão de Salvar -->
+            <button type="submit" class="btn-salvar">Salvar Alterações</button>
+        </form>
+    </div>
+
+</body>
+</html>

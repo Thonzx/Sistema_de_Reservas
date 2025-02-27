@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/adm/telaConsultaEspacos.css">
+    <script defer src="/ProjetoEAW/assets/js/adm/telaConsultaEspacos.js"></script>
+    <title>Espaços Cadastrados</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Espaços Cadastrados</h2>
+
+        <!-- Campo de Busca -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar espaço..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Tabela de Espaços Cadastrados -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Espaço</th>
+                    <th>Capacidade</th>
+                    <th>Tipo</th>
+                    <th>Localização</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="espacosTable">
+                <!-- Linhas preenchidas dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

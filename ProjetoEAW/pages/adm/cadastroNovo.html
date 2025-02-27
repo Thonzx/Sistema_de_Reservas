@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Espaços, Veículos e Professores</title>
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/adm/cadastroNovo.css">
+    <script defer src="/ProjetoEAW/assets/js/adm/cadastroNovo.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro</h2>
+
+        <!-- 🔹 Seleção do Tipo de Cadastro -->
+        <div class="form-group">
+            <label for="tipoCadastro">Selecione o que deseja cadastrar:</label>
+            <select id="tipoCadastro">
+                <option value="">Escolha uma opção</option>
+                <option value="espaco">Espaço</option>
+                <option value="veiculo">Veículo</option>
+                <option value="professor">Professor</option>
+            </select>
+        </div>
+
+        <!-- 🔹 Formulário para Cadastro de Espaços -->
+        <div class="form-section" id="formEspaco">
+            <h3>Cadastrar Espaço</h3>
+            <form id="cadastroEspaco">
+                <label for="nomeEspaco">Nome do Espaço:</label>
+                <input type="text" id="nomeEspaco" required>
+
+                <label for="capacidadeEspaco">Capacidade:</label>
+                <input type="number" id="capacidadeEspaco" required>
+
+                <label for="tipoEspaco">Tipo:</label>
+                <select id="tipoEspaco" required>
+                    <option value="">Selecione</option>
+                    <option value="Sala de Aula">Sala de Aula</option>
+                    <option value="Laboratório">Laboratório</option>
+                    <option value="Auditório">Auditório</option>
+                </select>
+
+                <label for="descricaoEspaco">Descrição:</label>
+                <textarea id="descricaoEspaco" rows="3"></textarea>
+
+                <button type="submit">Cadastrar Espaço</button>
+            </form>
+        </div>
+
+        <!-- 🔹 Formulário para Cadastro de Veículos -->
+        <div class="form-section" id="formVeiculo">
+            <h3>Cadastrar Veículo</h3>
+            <form id="cadastroVeiculo">
+                <label for="modeloVeiculo">Modelo:</label>
+                <input type="text" id="modeloVeiculo" required>
+
+                <label for="placaVeiculo">Placa:</label>
+                <input type="text" id="placaVeiculo" required>
+
+                <label for="capacidadeVeiculo">Capacidade:</label>
+                <input type="number" id="capacidadeVeiculo" required>
+
+                <label for="combustivelVeiculo">Tipo de Combustível:</label>
+                <select id="combustivelVeiculo" required>
+                    <option value="">Selecione</option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Etanol">Etanol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Elétrico">Elétrico</option>
+                </select>
+
+                <button type="submit">Cadastrar Veículo</button>
+            </form>
+        </div>
+
+        <!-- 🔹 Formulário para Cadastro de Professores -->
+        <div class="form-section" id="formProfessor">
+            <h3>Pré-Cadastrar Professor</h3>
+            <form id="cadastroProfessor">
+                <label for="nomeProfessor">Nome:</label>
+                <input type="text" id="nomeProfessor" required>
+
+                <label for="siapeProfessor">SIAPE:</label>
+                <input type="text" id="siapeProfessor" required>
+
+                <label for="cpfProfessor">CPF:</label>
+                <input type="text" id="cpfProfessor" required>
+
+                <button type="submit">Cadastrar Professor</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

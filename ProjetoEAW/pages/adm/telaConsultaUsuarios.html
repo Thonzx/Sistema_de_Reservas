@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/adm/telaConsultaUsuarios.css">
+    <script defer src="/ProjetoEAW/assets/js/adm/telaConsultaUsuarios.js"></script>
+    <title>Usuários Cadastrados</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Usuários Cadastrados</h2>
+
+        <!-- Campo de Busca -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar usuário..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Tabela de Usuários Cadastrados -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>SIAPE</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="usuariosTable">
+                <!-- Linhas preenchidas dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

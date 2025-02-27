@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/user/historicoReservas.css">
+    <script defer src="/ProjetoEAW/assets/js/user/historicoReservas.js"></script>
+    <title>Lista de Reservas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Histórico de Reservas</h2>
+
+        <!-- Campo de Busca -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar reserva..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+        
+
+        <!-- Tabela de Reservas -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuário</th>
+                    <th>Espaço</th>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="reservasTable">
+                <!-- Linhas preenchidas dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

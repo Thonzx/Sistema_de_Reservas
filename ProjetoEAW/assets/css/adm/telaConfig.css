@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #d3d5d6;
+}
+/* 🔹 Container Principal */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 600px;
+    width: 900px;
+    
+    /* 🔹 Mantém o conteúdo dentro do container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    color: #07212c;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Foto do Usuário */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2af41;
+}
+
+/* 🔹 Botão de Upload */
+.upload-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #07212c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.upload-btn:hover {
+    background-color: #06557c;
+}
+
+/* Esconde o input de arquivo */
+#uploadPhoto {
+    display: none;
+}
+
+/* 🔹 Estilização do Formulário */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 🔹 Botão de Salvar */
+.btn-salvar {
+    width: 100%;
+    padding: 10px;
+    background-color: #07212c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-salvar:hover {
+    background-color: #06557c;
+}
+
+/* 🔹 Aplica a barra de rolagem personalizada dentro do container do formulário */
+.container form {
+    max-height: 100%;
+    overflow-y: auto; /* Habilita a rolagem interna apenas se necessário */
+    padding-right: 10px; /* Evita que o conteúdo fique colado à borda da rolagem */
+}
+
+/* 🔹 Personaliza a barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra vertical */
+    height: 8px; /* Altura da barra horizontal (caso haja) */
+}
+
+/* 🔹 Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #e3e9f7; /* Cor do fundo da barra */
+    border-radius: 10px;
+}
+
+/* 🔹 Barra de rolagem (o controle deslizante) */
+::-webkit-scrollbar-thumb {
+    background: #07212c; /* Cor do botão da barra */
+    border-radius: 10px;
+}
+
+/* 🔹 Efeito ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #06557c;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}

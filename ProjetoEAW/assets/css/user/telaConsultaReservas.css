@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #d3d5d6;
+}
+
+/* 🔹 Define o Main Content */
+#main-content {
+    margin-left: 250px; /* Alinha com o menu lateral */
+    padding: 20px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* 🔹 Estilização do Campo de Busca com Ícone */
+.search-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Adiciona espaço para o ícone à direita */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 🔹 Estilização do Ícone da Lupa */
+.search-container i {
+    position: absolute;
+    right: 15px; /* Mantém o ícone alinhado ao lado direito */
+    color: #07212c;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+
+/* 🔹 Quando o menu estiver fechado */
+#sidebar.closed + #main-content {
+    margin-left: 82px;
+    width: calc(100% - 82px);
+}
+
+/* 🔹 Configuração do Quadro Branco (Container) */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 600px;
+    width: 900px;
+}
+
+/* 🔹 Estilização do Título */
+h2 {
+    margin-bottom: 20px;
+    color: #07212c;
+}
+
+/* 🔹 Campo de Busca */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #07212c;
+    border-radius: 5px;
+}
+
+/* 🔹 Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #07212c;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* 🔹 Botões */
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    #main-content {
+        margin-left: 82px;
+        width: calc(100% - 82px);
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

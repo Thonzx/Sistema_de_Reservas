@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/adm/telaConsultaVeiculos.css">
+    <script defer src="/ProjetoEAW/assets/js/adm/telaConsultaVeiculos.js"></script>
+    <title>Veículos Reservados</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Veículos Reservados</h2>
+
+        <!-- Campo de Busca -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar veículo..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Tabela de Veículos Reservados -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Placa</th>
+                    <th>Modelo</th>
+                    <th>Capacidade</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="veiculosTable">
+                <!-- Linhas preenchidas dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/adm/espacosReservados.css">
+    <script defer src="/ProjetoEAW/assets/js/adm/espacosReservados.js"></script>
+    <title>Reservas Feitas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Reservas Feitas</h2>
+
+        <!-- Abas para alternar entre Espaços e Veículos -->
+        <div class="tab-container">
+            <button class="tab-btn active" data-target="espacos">Espaços Reservados</button>
+            <button class="tab-btn" data-target="veiculos">Veículos Reservados</button>
+        </div>
+
+        <!-- Conteúdo das abas -->
+        <div class="tab-content active" id="espacos">
+            <h3>Espaços Reservados</h3>
+            <div class="search-container">
+                <input type="text" id="searchEspacos" placeholder="Buscar espaço reservado...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuário</th>
+                        <th>Espaço</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaEspacos">
+                    <!-- Dados preenchidos dinamicamente via JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tab-content" id="veiculos">
+            <h3>Veículos Reservados</h3>
+            <div class="search-container">
+                <input type="text" id="searchVeiculos" placeholder="Buscar veículo reservado...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuário</th>
+                        <th>Veículo</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaVeiculos">
+                    <!-- Dados preenchidos dinamicamente via JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

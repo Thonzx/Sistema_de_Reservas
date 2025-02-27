@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #d3d5d6;
+}
+
+#avatar {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px;
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    border: 2px solid #e2af41; /* Borda branca para destaque */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left .5s ease-in-out;
+}
+
+/* Configuração do menu lateral */
+#sidebar {
+    display: flex; /* Usa o modelo de layout flexível para organizar os elementos dentro do menu */
+    flex-direction: column; /* Organiza os itens em uma coluna (de cima para baixo) */
+    justify-content: space-between; /* Distribui os elementos uniformemente, deixando espaço entre eles */
+    background-color: #ffffff; /* Define o fundo do menu lateral como branco */
+    height: 100vh; /* Faz com que o menu ocupe toda a altura da tela */
+    border-radius: 0px 18px 18px 0px; /* Arredonda os cantos superiores e inferiores da borda direita */
+    border: 1px solid #e2af41;
+    position: fixed; /* Mantém o menu fixo na tela, mesmo ao rolar a página */
+    transition: width 0.3s ease-in-out; /* Anima a mudança de largura suavemente ao abrir/fechar */
+    width: 250px; /* Define a largura padrão do menu quando está aberto */
+    z-index: 2; /* Garante que o menu fique acima de outros elementos da página */
+}
+
+/* Quando o menu está fechado */
+#sidebar.closed {
+    width: 82px;
+}
+
+/* Esconde os textos quando o menu está fechado */
+#sidebar.closed .item-description {
+    display: none;
+}
+
+/* Ajusta o layout dos itens quando o menu está fechado */
+#sidebar.closed .side-item a {
+    justify-content: center;
+}
+
+/* Sidebar Content */
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#user_infos span {
+    white-space: nowrap;
+}
+
+#sidebar.closed #user_infos {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Sidebar Items */
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+/* Ajusta os itens do menu para serem totalmente clicáveis */
+.side-item {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    user-select: none; /* Evita seleção indesejada */
+}
+
+/* Itens ativos do menu */
+.side-item.active {
+    background-color: #07212c;
+    transition: background-color 0.3s;
+}
+
+.side-item.active a {
+    color: #ffffff;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #e3e9f7;
+}
+
+.side-item a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: none;
+    color: #0a0a0a;
+    width: 100%;
+    padding: 14px; /* Faz o link ocupar toda a área do item */
+    border-radius: 8px;
+}
+
+.side-item a i {
+    width: 20px;
+    height: 20px;
+}
+
+/* Logout */
+#logout {
+    border-top: 1px solid #e2af41;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* Botão de abrir/fechar sidebar */
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    background-color: #07212c;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Ícone do botão */
+#open_btn_icon {
+    transition: transform 0.3s;
+}
+
+/* Rotaciona o ícone quando o menu está fechado */
+#sidebar.closed #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+/* Ajusta os submenus */
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Exibe os submenus quando a opção está ativa */
+.side-item.active .submenu {
+    display: block;
+}
+
+/* Ícones de seta */
+.fa-caret-right, .fa-caret-down {
+    transition: transform 0.3s ease;
+}
+
+/* Rotaciona o ícone ao abrir o menu */
+.side-item.active .fa-caret-right {
+    transform: rotate(90deg);
+}
+
+/* 🔹 Área principal do conteúdo */
+#main-content {
+    margin-left: 250px; /* Quando o menu está aberto */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    
+    /* Centralizar o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 250px); /* Ajusta para ocupar o espaço restante */
+    height: 100vh; /* Ocupa toda a tela */
+    overflow: auto;
+}
+
+/* Ajuste quando o menu está fechado */
+#sidebar.closed + #main-content {
+    margin-left: 82px; /* Quando o menu está fechado */
+    width: calc(100% - 82px);
+}
+
+/* 🔹 Estilização do conteúdo dentro do main */
+.content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 600px;
+    width: 900px;
+}

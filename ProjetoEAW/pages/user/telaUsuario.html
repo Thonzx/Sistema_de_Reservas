@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/user/telaUsuario.css">
+    <title>Sistema de Reservas - User</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="/ProjetoEAW/assets/img/user.png" id="avatar">
+                <p id="user_infos">
+                    <span class="item-description">Sistema de Reservas</span>
+                    <span class="item-description">User</span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#" data-page="/views/espacos.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span class="item-description">Espaços Reservados</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/user/telaConsultaReservas.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="item-description">Reservas</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/user/reservaEspacos.html">
+                        <i class="fa-solid fa-house-medical"></i>
+                        <span class="item-description">Reservar Espaços</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/user/reservaVeiculos.html">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="item-description">Reservar Veículos</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/user/historicoReservas.html">
+                        <i class="fa-solid fa-file-alt"></i>
+                        <span class="item-description">Histórico de Reservas</span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/user/telaConfig.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">Configurações</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">Sair</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div id="content-box">
+            <h2>Bem-vindo ao Sistema de Reservas</h2>
+            <p>Selecione uma opção no menu para continuar.</p>
+        </div>
+    </main>
+    
+    <script src="/ProjetoEAW/assets/js/user/telaUsuario.js"></script>
+</body>
+</html>
+

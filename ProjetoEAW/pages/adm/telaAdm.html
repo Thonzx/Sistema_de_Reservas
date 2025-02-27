@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/ProjetoEAW/assets/css/user/telaUsuario.css">
+    <title>Sistema de Reservas - Administrador</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="/ProjetoEAW/assets/img/user.png" id="avatar">
+                <p id="user_infos">
+                    <span class="item-description">Sistema de Reservas</span>
+                    <span class="item-description">Administrador</span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                
+            <li class="side-item active">
+                <a href="#" data-page="/ProjetoEAW/pages/adm/espacosReservados.html">
+                    <i class="fa-solid fa-file"></i>
+                    <span class="item-description">Espaços Reservados</span>
+                </a>
+            </li>
+
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/telaConsultaEspacos.html">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="item-description">Espaços Cadastrados</span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/telaConsultaVeiculos.html">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="item-description">Veículos Cadastrados</span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/telaConsultaUsuarios.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">Usuários Cadastrados</span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/cadastroNovo.html">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span class="item-description">Cadastrar</span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/telaConsultaReservas.html">
+                        <i class="fa-solid fa-paste"></i>
+                        <span class="item-description">Reservas</span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/telaConsultaRelatorios.html">
+                        <i class="fa-solid fa-file-alt"></i>
+                        <span class="item-description">Relatório de Reservas</span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#" data-page="/ProjetoEAW/pages/adm/telaConfig.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">Configurações</span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">Sair</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div id="content-box">
+            <h2>Bem-vindo ao Sistema de Reservas</h2>
+            <p>Selecione uma opção no menu para continuar.</p>
+        </div>
+    </main>
+    
+    <script src="/ProjetoEAW/assets/js/adm/telaAdm.js"></script>
+</body>
+</html>

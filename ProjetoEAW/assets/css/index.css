@@ -1,0 +1,141 @@
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilo Geral */
+body {
+    background-color: #d3d5d6;
+    color: #333;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #07212c;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #e2af41; /* Cor da borda sólida */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #586a70;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #e2af41;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #586a70;
+    color: white;
+}
+
+/* Seção Principal */
+main {
+    margin: 70px auto 40px auto; /* Ajuste os valores conforme necessário */
+
+    flex: 1;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #07212c;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Destaques */
+.destaques {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px auto 130px auto; /* Ajuste os valores conforme necessário */
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #07212c; /* Cor da borda sólida */
+    box-shadow: none; /* Removendo o efeito borrado */
+    width: 210px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover i {
+    transform: scale(1.5);
+}
+
+
+/* Ajuste da cor dos ícones */
+.card i {
+    color: #07212c;
+    font-size: 30px; /* Tamanho do ícone (opcional) */
+}
+
+
+.icon {
+    font-size: 3rem;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #07212c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #07212c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+

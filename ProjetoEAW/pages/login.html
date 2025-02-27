@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Parte da imagem -->
+        <div class="form-image">
+            <a href="/" class="home-icon">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <img src="/assets/img/cadaa.png" alt="Imagem de Login">
+        </div>
+
+        <!-- Parte do formulário -->
+        <div class="form">
+            <h1>Login</h1>
+
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="siape">SIAPE</label>
+                        <input id="siape" type="text" name="siape" placeholder="Digite seu SIAPE">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <!-- Links para recuperação de senha e cadastro -->
+                <div class="links">
+                    <a href="#">Esqueci minha senha</a>
+                    <a href="/cadastro">Cadastre-se</a>
+                </div>
+
+                <div class="login-button">
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
